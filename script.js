@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let roots = document.querySelectorAll(".root");
   let menuBar = document.querySelector(".menu-bar");
   let current = null;
-  //location.hash = "basic";
+  location.hash === "" ? location.hash = "basic" : null;
 
   roots.forEach(r => {
     let id = r.getAttribute("id");
@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     menuBar.appendChild(a);
 
-    // if(id === "basic") {
-    //   current = a;
-    //   a.classList.add("current");
-    // }
+    if(id === "basic") {
+      current = a;
+      a.classList.add("current");
+    }
   })
 })
