@@ -1,0 +1,104 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex.space > div + div {
+  margin-left: 1rem;
+}
+
+.flex-col.space > div + div {
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
+.flex-wrap.space > div + div {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.root {
+  position: relative;
+  display: none;
+  height: 100%;
+  flex-grow: 1;
+  padding: 2.5rem;
+  overflow-y: auto;
+}
+
+.root::after,
+.root .item::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.root::after {
+  content: attr(id);
+  top: 1rem;
+  left: 0;
+}
+
+.root:target {
+  display: flex;
+}
+
+.no-shrink > div {
+  flex-shrink: 0;
+}
+
+.root .item {
+  position: relative;
+  background: #eaeaea;
+}
+
+.root .item .item {
+  background: #bababa;
+}
+
+.root .item::after {
+  content: attr(data-role);
+  height: 100%;
+}
+
+.tile-article {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.tile-readmore {
+  flex-shrink: 0;
+}
+
+.portfolio-item {
+  height: calc(32vw - 5.78rem);
+  width: 32%;
+  margin-bottom: 2%;
+}
+
+.menu-bar > a {
+  font-size: 0.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0.5;
+  transition: opacity .5s;
+}
+
+.menu-bar > a.current,
+.menu-bar > a:hover {
+  opacity: 1;
+}
+
+.menu-bar > a + a {
+  margin-top: 0.5rem;
+}

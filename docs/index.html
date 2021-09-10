@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexable-Layouts</title>
+</head>
+<body class="flex">
+  <div id="basic" class="root flex-col space">
+    <div data-role="header" class="w-full h-16 item"></div>
+    <div class="flex-grow flex space">
+      <div data-role="sidebar" class="h-full w-48 item"></div>
+      <div data-role="main" class="flex-grow item"></div>
+    </div>
+    <div data-role="footer" class="w-full h-32 item"></div>
+  </div>
+  <div id="landing-1" class="root flex-col space">
+    <div data-role="carousel" class="w-full h-80 item"></div>
+    <div class="flex-grow flex space">
+      <div class="flex flex-col w-1/3 item p-4">
+        <div data-role="img" class="w-full h-48 item"></div>
+        <div class="text-xl font-bold mt-4 mb-2">lorem title</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+      </div>
+      <div class="flex flex-col w-1/3 item p-4">
+        <div data-role="img" class="w-full h-48 item"></div>
+        <div class="text-xl font-bold mt-4 mb-2">lorem title</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+      </div>
+      <div class="flex flex-col w-1/3 item p-4">
+        <div data-role="img" class="w-full h-48 item"></div>
+        <div class="text-xl font-bold mt-4 mb-2">lorem title</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+      </div>
+    </div>
+  </div>
+  <div id="landing-2" class="root flex-col space">
+    <div data-role="carousel" class="w-full h-1/3 item"></div>
+    <div class="flex w-full h-1/3 space">
+      <div class="flex flex-col w-1/2 item p-4 space">
+        <div class="text-xl font-bold text-center">lorem title</div>
+        <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+        <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+      </div>
+      <div class="flex flex-col w-1/2 item p-4 space">
+        <div class="text-xl font-bold text-center">lorem title</div>
+        <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+        <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+      </div>
+    </div>
+    <div class="flex w-full h-1/3 item p-4 space">
+      <div data-role="img" class="flex-shrink-0 h-full w-96 item"></div>
+      <div class="flex-grow flex flex-col space">
+        <div class="text-xl font-bold">lorem title</div>
+        <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+        <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+      </div>
+    </div>
+  </div>
+  <div id="magazine" class="root flex-col space no-shrink">
+    <div class="flex h-1/3 space">
+      <div class="flex flex-col w-1/3 item p-4 space" style="flex-shrink: 3;">
+        <div class="text-xl font-bold">lorem title</div>
+        <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+        <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+      </div>
+      <div class="flex w-2/3 p-4 item space">
+        <div data-role="img" class="h-full w-1/2 item"></div>
+        <div class="w-1/2 flex flex-col space">
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full h-full space">
+      <div class="flex flex-col w-1/3 no-shrink space">
+        <div class="flex h-1/3 w-full item p-4">
+          <div data-role="img" class=" h-full w-full item"></div>
+        </div>
+        <div class="flex flex-col h-2/3 w-full p-4 item space">
+          <div data-role="img" class="w-full h-1/2 item"></div>
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+        <div class="flex h-1/3 w-full item p-4">
+          <div data-role="img" class=" h-full w-full item"></div>
+        </div>
+        <div class="fake-margin h-8"></div>
+      </div>
+      <div class="flex flex-col w-1/3 no-shrink space">
+        <div class="flex flex-col h-2/3 w-full p-4 item space">
+          <div data-role="img" class="w-full h-1/2 item"></div>
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+        <div class="flex flex-col w-full h-1/3 item p-4 space">
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+      </div>
+      <div class="flex flex-col w-1/3 no-shrink space">
+        <div class="flex flex-col h-1/2 w-full p-4 item space">
+          <div data-role="img" class="flex-shrink-0 w-full h-2/3 item"></div>
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+        <div class="flex flex-col h-2/3 w-full p-4 item space">
+          <div data-role="img" class="w-full h-1/2 item"></div>
+          <div class="text-xl font-bold">lorem title</div>
+          <div class="tile-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis ipsa blanditiis fuga dolore mollitia architecto maxime? Enim rem at, molestias, sed nobis voluptatibus cumque aliquid odio, explicabo dolores autem!</div>
+          <div data-role="readmore" class="tile-readmore h-8 w-24 item"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio/feed" class="root flex-wrap justify-between">
+    <div data-role="item-1" class="portfolio-item item"></div>
+    <div data-role="item-2" class="portfolio-item item"></div>
+    <div data-role="item-3" class="portfolio-item item"></div>
+    <div data-role="item-4" class="portfolio-item item"></div>
+    <div data-role="item-5" class="portfolio-item item"></div>
+    <div data-role="item-6" class="portfolio-item item"></div>
+    <div data-role="item-7" class="portfolio-item item"></div>
+    <div data-role="item-8" class="portfolio-item item"></div>
+    <div data-role="item-9" class="portfolio-item item"></div>
+    <div data-role="item-10" class="portfolio-item item"></div>
+  </div>
+  <div class="menu-bar flex-shrink-0 w-48 flex flex-col border-l p-4">
+  </div>
+</body>
+</html>
