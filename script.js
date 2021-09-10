@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     menuBar.appendChild(a);
 
-    if(id === "basic") {
+    if(id === location.hash.replace("#", "")) {
       current = a;
       a.classList.add("current");
     }
